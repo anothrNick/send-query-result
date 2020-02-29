@@ -62,7 +62,11 @@ func main() {
 		// wait for ticker
 		<-ticker.C
 		// query db and send result every interval
-		rows, _ := db.Query(query)
+		rows, err := db.Query(query)
+		if err != nil {
+			log.Println(err)
+			continue
+		}
 		results, err := xsql.Pretty(rows)
 		if err != nil {
 			log.Println(err)

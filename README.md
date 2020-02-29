@@ -42,7 +42,7 @@ This script is meant to send to a Slack Incoming Web Hook, so the request body w
 }
 ```
 
-_NOTE: Howevever, the sql output can be sent to any web hook_
+_Howevever, the sql output can be sent to any web hook_
 
 ### Dependencies
 

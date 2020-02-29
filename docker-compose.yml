@@ -1,0 +1,17 @@
+version: '2'
+services:
+
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: query_stats
+    environment:
+      - POSTGRES_USER=testuser
+      - POSTGRES_PW=1234
+      - POSTGRES_HOST=database
+      - POSTGRES_DB=testdb
+      - POSTGRES_SSL=disable
+      - STAT_QUERY
+      - STAT_INTERVAL
+      - STAT_URL

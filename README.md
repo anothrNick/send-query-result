@@ -1,5 +1,7 @@
 # send-query-result
 
+[![Stable Version](https://img.shields.io/github/v/tag/anothrNick/send-query-result)](https://img.shields.io/github/v/tag/anothrNick/send-query-result)
+
 Sends the text output of a Postgres query to a Slack channel via Incoming Web Hook (or any web hook). The query is run on a configurable interval.
 
 For example, if you wanted to know the count of records for a specific table in Postgres (and you don't have metrics), you could run this container with the following query:
